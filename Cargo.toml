@@ -2,6 +2,9 @@
 name = "sphalerite"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+description = "A dependency-free crate for binary serialization"
+repository = "https://github.com/Phil-hacker/sphalerite"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

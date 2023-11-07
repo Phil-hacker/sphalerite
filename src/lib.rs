@@ -1,6 +1,16 @@
+//! A dependency-less crate for simple binary serialization and deserialization in rust.
+//!
+//! ## Usage
+//!
+//! To use the crate simply install it using cargo
+//! (`cargo add sphalerite`)
+//! and implement the [Transcode] trait.
+//!
+//! To serialize a variable call [to_bytes](Transcode::to_bytes) and for deserialization call [from_bytes](Transcode::from_bytes)
+
 #[macro_use]
 mod transcode;
-
+pub use transcode::Transcode;
 #[cfg(test)]
 mod tests {
     use std::collections::{HashSet, HashMap};

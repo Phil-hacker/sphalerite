@@ -1,7 +1,11 @@
 use std::{io::{self, Read, Write}, hash::Hash, collections::{HashMap, HashSet}};
 
 pub trait Transcode: Sized {
+    /// Write `&self` to a &mut dyn [Write](std::io::Write)
+    /// Returns the amount of bytes written or an [Error](std::io::Error)
     fn to_bytes(&self, _writer: &mut dyn Write) -> io::Result<usize>;
+    /// Read Self from a &mut dyn [Read](std::io::Read)
+    /// Returns Self or an [Error](std::io::Error)
     fn from_bytes(_reader: &mut dyn Read) -> io::Result<Self>;
 }
 
