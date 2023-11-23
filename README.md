@@ -1,5 +1,6 @@
-![Crates.io](https://img.shields.io/crates/v/sphalerite)
- ![docs.rs](https://img.shields.io/docsrs/sphalerite) ![Crates.io](https://img.shields.io/crates/l/sphalerite)
+[![Crates.io](https://img.shields.io/crates/v/sphalerite)](https://crates.io/crates/sphalerite)
+[![docs.rs](https://img.shields.io/docsrs/sphalerite)](https://docs.rs/sphalerite)
+[![Crates.io](https://img.shields.io/crates/l/sphalerite)](https://crates.io/crates/sphalerite)
 # Sphalerite
 A dependency-less crate for simple binary serialization and deserialization in rust.
 
